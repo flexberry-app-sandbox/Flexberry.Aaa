@@ -1,0 +1,22 @@
+﻿{
+  "applicationCaption": "Aaa",
+  "applicationTitle": "Aaa",
+  "items": [
+    {
+      "link": null,
+      "menuName": "aaa",
+      "caption": "Aaa",
+      "title": "Aaa",
+      "children": [
+        {
+          "link": "i-i-s-aaa-согласие-l",
+          "menuName": null,
+          "caption": "Согласие",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

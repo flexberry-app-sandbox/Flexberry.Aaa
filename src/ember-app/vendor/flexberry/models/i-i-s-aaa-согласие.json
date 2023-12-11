@@ -1,0 +1,68 @@
+﻿{
+  "name": "IISAaaСогласие",
+  "modelName": "i-i-s-aaa-согласие",
+  "className": "Согласие",
+  "nameSpace": "IIS.Aaa",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "сотрудники",
+      "relatedTo": "i-i-s-aaa-сотрудники",
+      "inverse": "согласие"
+    }
+  ],
+  "projections": [
+    {
+      "name": "СогласиеE",
+      "modelName": "i-i-s-aaa-согласие",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "СотрудникиE",
+          "caption": "Сотрудники",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-aaa-сотрудники",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "СогласиеL",
+      "modelName": "i-i-s-aaa-согласие",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
